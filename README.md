@@ -18,20 +18,20 @@ Go to the *ODBC data sources* program in Windows.
 
 1. 
 Create a new data source name (click `Add`)
-![step1](images/1.png)
-![step1b](images/1b.png)
+<img src="images/1.png" width="500"/>
+<img src="images/1b.png" width="500"/>
 
 2. 
-![step2](images/2.png)
+<img src="images/2.png" width="500"/>
 
 3. 
-![step3](images/3.png)
+<img src="images/3.png" width="500"/>
 
 4.
-![step4](images/4.png)
+<img src="images/4.png" width="500"/>
 
 5.
-![step5](images/5.png)
+<img src="images/5.png" width="500"/>
 
 ## Configure addon
 Modify the `config.json` file to set
