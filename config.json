@@ -1,0 +1,31 @@
+{
+    "dsn": "mydatasource",
+    "email_account": {
+        "account_name": "AdventureWorks Administrator",
+        "description": "Account for emailer addon",
+        "email_address": "hello@adventureworks.com",
+        "display_name": "AdventureWorks Automated Mailer",
+        "smtp_address": "smtp.adventureworks.com",
+        "smtp_username": "username",
+        "smtp_password": "password"
+    },
+    "email_recepients": [
+        {
+            "event_type": "RefreshCache",
+            "recepient_list": "dabroo@microsoft.com",
+            "last_status_type_like": "succeeded",
+            "email_profile_name": "refresh_email_profile",
+            "email_template": "./templates/default.html",
+            "date_add": ""
+        },
+        {
+            "event_type": "RefreshCache",
+            "recepient_list": "dabroo@microsoft.com",
+            "last_status_type_like": "failed",
+            "email_profile_name": "refresh_email_profile",
+            "email_template": "./templates/default.html",
+            "date_add": ""
+        }
+    ],
+    "interval": "PT5M"
+}
