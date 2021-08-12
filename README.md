@@ -14,10 +14,10 @@ pip install requirements.txt
 ```
 
 ## Setup connection
-Go to the *ODBC data sources* program in Windows.
+Go to the *ODBC data sources* program in Windows to create a new data source.
 
 1. 
-Create a new data source name (click `Add`)
+
 <img src="images/1.png" width="500"/>
 <img src="images/1b.png" width="500"/>
 
