@@ -51,13 +51,19 @@ Parameters for email recepients:
 
 ## Final steps
 - When email needs to be sent, run the stored procedure in the database
-- Alternatively, create scheduled job to run the stored procedure through SSMS
+- Alternatively, [create scheduled job to run the stored procedure through SSMS](https://docs.microsoft.com/en-us/sql/ssms/agent/schedule-a-job?view=sql-server-ver15)
 
 ## Run
 ```
 python main.py
 ```
 
-**NOTE**: The script will not create or alter any tables if they already exist. 
+**NOTE**: 
 
-To reset, run `EmailerDrop.sql` in your database.
+- The script will replace all rows in the `EmailRecepients` table based on the JSON config.
+
+- If a new email account is configured, it will be added to the current list of email accounts in the database.
+
+- Tables created during setup will not be overrided and will just be ignored.
+
+To do a full reset, run `EmailerDrop.sql` in your database.
