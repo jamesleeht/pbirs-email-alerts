@@ -49,15 +49,11 @@ Parameters for email recepients:
 | email_template | relative filepath to HTML file | |
 | date_add | datetime |  |
 
-## Run
+## Run script
 ```
 python main.py
 ```
-
-- When email needs to be sent, run the stored procedure in the database
-- Alternatively, [create scheduled job to run the stored procedure through SSMS](https://docs.microsoft.com/en-us/sql/ssms/agent/schedule-a-job?view=sql-server-ver15)
-
-## Updates
+This will install the stored procedure for the first time and also make updates if the configuration has changed.
 
 - The script will replace all rows in the `EmailRecepients` table based on the JSON config.
 
@@ -66,3 +62,7 @@ python main.py
 - Tables created during setup will not be overrided and will just be ignored.
 
 To do a full reset, run `EmailerDrop.sql` in your database.
+
+## How to use
+- When email needs to be sent, run the stored procedure in the database
+- Alternatively, [create scheduled job to run the stored procedure through SSMS](https://docs.microsoft.com/en-us/sql/ssms/agent/schedule-a-job?view=sql-server-ver15)
