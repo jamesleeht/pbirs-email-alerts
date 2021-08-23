@@ -61,8 +61,9 @@ This will install the stored procedure for the first time and also make updates 
 
 - Tables created during setup will not be overrided and will just be ignored.
 
-To do a full reset, run `EmailerDrop.sql` in your database.
-
 ## How to use
 - When email needs to be sent, run the stored procedure in the database
 - Alternatively, [create scheduled job to run the stored procedure through SSMS](https://docs.microsoft.com/en-us/sql/ssms/agent/schedule-a-job?view=sql-server-ver15)
+
+## Full reset
+- To do a full reset, run `EmailerDrop.sql` in your database.
