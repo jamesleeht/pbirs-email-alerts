@@ -1,6 +1,6 @@
 # Email Alerts addon for Power BI Report Server
 
-Script to enable email alerts for cache refresh and timed subscription events in PowerBI Report Server.
+This script creates a stored procedure that will send email alerts for cache refresh and timed subscription events in PowerBI Report Server.
 
 ## Requirements
 - Python3
@@ -49,16 +49,15 @@ Parameters for email recepients:
 | email_template | relative filepath to HTML file | |
 | date_add | datetime |  |
 
-## Final steps
-- When email needs to be sent, run the stored procedure in the database
-- Alternatively, [create scheduled job to run the stored procedure through SSMS](https://docs.microsoft.com/en-us/sql/ssms/agent/schedule-a-job?view=sql-server-ver15)
-
 ## Run
 ```
 python main.py
 ```
 
-**NOTE**: 
+- When email needs to be sent, run the stored procedure in the database
+- Alternatively, [create scheduled job to run the stored procedure through SSMS](https://docs.microsoft.com/en-us/sql/ssms/agent/schedule-a-job?view=sql-server-ver15)
+
+## Updates
 
 - The script will replace all rows in the `EmailRecepients` table based on the JSON config.
 
