@@ -35,7 +35,7 @@ Go to the *ODBC data sources* program in Windows to create a new data source.
 
 ## Configure addon
 Modify the `config.json` file to set
-1. DSN name
+1. DSN name (e.g. mydatasource)
 2. Email account for sending
 3. Email recepients
 
